@@ -1,0 +1,11 @@
+<template>
+    <lightning-card title="Accounts">
+    <template if:true={records}>
+        <ul class="slds-m-left_medium">
+        <template for:each={records} for:item="r">
+            <li key={r.Id}>{r.Name.value}</li>
+        </template>
+        </ul>
+    </template>
+    </lightning-card>
+</template>
